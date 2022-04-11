@@ -1,0 +1,36 @@
+<center><h3>BlindDates</h3></center>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Blind Date ID</th>
+      <th scope="col">Emp Id</th>
+      <th scope="col">Emp Name</th>
+      <th scope="col">Email ID</th>
+      <th scope="col">Team Name</th>
+      <th scope="col">Is Leader?</th>
+      <th scope="col">Is Attending Lunch?</th>
+      <th scope="col">Lunch Date</th>
+      <th scope="col">Restaurant</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    
+    <% @blind_dates.each_with_index do |blind_date, index| %>
+      <tr>
+        <th scope="row"><%= index+1%></th>
+        <td><%= blind_date.id %></td>
+        <td><%= blind_date.employee_id %></td>
+        <td><%= blind_date.employee.name %></td>
+        <td><%= blind_date.employee.email %></td>
+        <td><%= blind_date.employee.team.name %></td>
+        <td><%= blind_date.is_leader ? 'Yes' : 'No' %></td>
+        <td><%= blind_date.is_available ? 'Yes' : 'No' %></td>
+        <td><%= blind_date.lunch_date.strftime("%d-%m-%Y") %></td>
+        <td><%= @restaurant.name%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,9 +1,0 @@
-  [1m[35m (200.7ms)[0m  [1m[35mCREATE DATABASE "DataSimul_development" ENCODING = 'unicode'[0m
-  [1m[35m (62.7ms)[0m  [1m[35mCREATE DATABASE "DataSimul_test" ENCODING = 'unicode'[0m
-Started GET "/" for ::1 at 2022-04-09 15:51:28 +0530
-Processing by Rails::WelcomeController#index as HTML
-  Rendering /Users/viveknegi/.rvm/gems/ruby-2.7.4/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /Users/viveknegi/.rvm/gems/ruby-2.7.4/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.9ms | Allocations: 675)
-Completed 200 OK in 15ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 6444)
-
-

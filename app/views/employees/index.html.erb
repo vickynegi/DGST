@@ -1,0 +1,20 @@
+<center><h3>Employees</h3></center>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Email ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @employees.each_with_index do |emp, index| %>
+      <tr>
+        <th scope="row"><%= index+1%></th>
+        <td><%= emp.name %></td>
+        <td><%= emp.email %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
